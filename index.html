@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Ti 💖</title>
+<title>Para Mi Amiga 💜</title>
 
 <style>
 body{
-  background:black;
+  background:#0b0f2a;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -20,7 +20,7 @@ body{
 
 /* Texto inicio */
 .inicio{
-  color:#ff4da6;
+  color:#a78bfa;
   font-size:26px;
   font-family:cursive;
   margin-bottom:10px;
@@ -36,7 +36,7 @@ body{
 button{
   padding:15px 35px;
   font-size:18px;
-  background:#ff4da6;
+  background:#6366f1;
   color:white;
   border:none;
   border-radius:12px;
@@ -47,15 +47,15 @@ button{
   display:none;
 }
 
-/* Ramo */
+/* Imagen */
 img{
   width:85%;
-  max-width:320px;
+  max-width:300px;
   margin-top:20px;
-  animation: aparecerRamo 3s ease-out forwards;
+  animation: aparecer 3s ease-out forwards;
 }
 
-@keyframes aparecerRamo{
+@keyframes aparecer{
   from{
     transform: scale(0);
     opacity:0;
@@ -68,15 +68,15 @@ img{
 
 /* Mensaje */
 p{
-  color:#ff4da6;
+  color:#c4b5fd;
   font-family:cursive;
   font-size:20px;
   margin-top:20px;
   line-height:1.6;
-  animation: aparecerTexto 4s ease-in forwards;
+  animation: texto 4s ease-in forwards;
 }
 
-@keyframes aparecerTexto{
+@keyframes texto{
   from{opacity:0;}
   to{opacity:1;}
 }
@@ -86,18 +86,17 @@ p{
 <body>
 
 <div id="inicio">
-  <div class="inicio">Amor presiona aquí</div>
+  <div class="inicio">Amiga presiona aquí 💜</div>
   <div class="mano">👇</div>
-  <button onclick="mostrar()">Abrir 💖</button>
+  <button onclick="mostrar()">Abrir ✨</button>
 </div>
 
 <div id="contenido">
   <img src="ramo.png">
   <p>
-Hablar contigo se ha vuelto una de mis partes favoritas del día.  
-Me gusta tu forma de ser, tu manera de pensar y la tranquilidad que me transmites.  
-No sé qué nos tenga preparado el destino, pero sí sé que me encanta compartir contigo cada conversación.  
-Gracias por estar, por escucharme y por hacer mis días más bonitos. 💕✨
+Gracias por cada conversación, cada risa y cada mensaje.  
+Me alegra mucho tenerte como amiga y compartir contigo tantos momentos,  
+aunque sea por chat. 🤍
   </p>
 </div>
 
@@ -110,3 +109,4 @@ function mostrar(){
 
 </body>
 </html>
+
