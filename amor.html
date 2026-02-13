@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Ti 💖</title>
+
+<style>
+body{
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  margin:0;
+  flex-direction:column;
+  text-align:center;
+  padding:20px;
+}
+
+/* Texto inicio */
+.inicio{
+  color:#ff4da6;
+  font-size:26px;
+  font-family:cursive;
+  margin-bottom:10px;
+}
+
+/* Manito */
+.mano{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+/* Botón */
+button{
+  padding:15px 35px;
+  font-size:18px;
+  background:#ff4da6;
+  color:white;
+  border:none;
+  border-radius:12px;
+}
+
+/* Contenido oculto */
+#contenido{
+  display:none;
+}
+
+/* Ramo */
+img{
+  width:85%;
+  max-width:320px;
+  margin-top:20px;
+  animation: aparecerRamo 3s ease-out forwards;
+}
+
+@keyframes aparecerRamo{
+  from{
+    transform: scale(0);
+    opacity:0;
+  }
+  to{
+    transform: scale(1);
+    opacity:1;
+  }
+}
+
+/* Mensaje */
+p{
+  color:#ff4da6;
+  font-family:cursive;
+  font-size:20px;
+  margin-top:20px;
+  line-height:1.6;
+  animation: aparecerTexto 4s ease-in forwards;
+}
+
+@keyframes aparecerTexto{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="inicio">
+  <div class="inicio">Amor presiona aquí</div>
+  <div class="mano">👇</div>
+  <button onclick="mostrar()">Abrir 💖</button>
+</div>
+
+<div id="contenido">
+  <img src="ramo.png">
+  <p>
+Hablar contigo se ha vuelto una de mis partes favoritas del día.  
+Me gusta tu forma de ser, tu manera de pensar y la tranquilidad que me transmites.  
+No sé qué nos tenga preparado el destino, pero sí sé que me encanta compartir contigo cada conversación.  
+Gracias por estar, por escucharme y por hacer mis días más bonitos. 💕✨
+  </p>
+</div>
+
+<script>
+function mostrar(){
+  document.getElementById("inicio").style.display="none";
+  document.getElementById("contenido").style.display="block";
+}
+</script>
+
+</body>
+</html>
